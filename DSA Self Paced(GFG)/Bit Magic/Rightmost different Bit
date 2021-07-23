@@ -1,0 +1,11 @@
+ if(m==n)
+        return -1;
+        int z,count=1;
+        z=m^n;
+        while(z>0)
+        {
+            if(z%2==0)
+            count+=1;
+            else
+            return count;
+            z/=2;
