@@ -1,0 +1,6 @@
+ unsigned long long mult,mod;
+        mod=pow(10,9)+7;
+        a=a%mod;
+        b=b%mod;
+        mult=a*b;
+        return (mult%mod);
