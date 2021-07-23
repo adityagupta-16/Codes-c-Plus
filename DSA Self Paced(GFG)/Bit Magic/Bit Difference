@@ -1,0 +1,21 @@
+ int z,count=1,i=0;
+        int ar[32];
+        z=a^b;
+        
+        while(z>0)
+        {
+            if(z%2!=0)
+           ar[i]=1;
+           else
+           ar[i]=0;
+           i++;
+            z/=2;
+        }
+    reverse(ar,ar+i);
+    while(i>0)
+    {
+        if(ar[i]==1)
+        count+=1;
+        i--;
+    }
+    return count;
