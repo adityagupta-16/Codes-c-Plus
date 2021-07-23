@@ -1,0 +1,23 @@
+ int count=0,a=0,m=-1;
+       int maxAND (int arr[], int N)
+    {
+        // Your code her
+         m+=1;
+        if(m!=N-1)
+      {  
+          for(int i=m+1;i<N;i++)
+        {   
+                
+                 a=arr[m]&arr[i];
+            
+            if(count<a)
+            
+            count=max(count,a);
+        }
+       
+        maxAND(arr,N);
+        
+        return count;
+          
+      }
+    }
