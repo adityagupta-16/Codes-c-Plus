@@ -1,0 +1,28 @@
+
+//Random number genrator Or guess the number;
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int number,u_number;
+	 srand (time(NULL)); //initializing random seed
+	number=rand() % 100 + 1; //genrating random number from 1 to 100
+	do{
+		cout<<"Guess the number between 1 to 100 and to forfeit take input as negative  : ";
+		cin>>u_number;
+		if(u_number==number)
+		{
+			cout<<"Woohoo !!! Correct number."<<endl;
+			break;
+		}
+		else if(u_number<number)
+		cout<<"Your number is too small  "<<endl;
+		else 
+		cout<<"Your number is too large  "<<endl;
+		
+	}
+	while(u_number>=0);
+	cout<<"My number was : ";
+	cout<<number;	
+	
+}
