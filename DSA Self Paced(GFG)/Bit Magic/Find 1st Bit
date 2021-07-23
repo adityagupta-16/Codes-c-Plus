@@ -1,0 +1,12 @@
+ if(n==0)
+        return n;
+      int flag=1;
+        // Your code here
+        while(n>0)
+        {
+            if(n%2==0)
+           { ++flag;
+           }
+            else 
+            return flag;
+            n/=2;
