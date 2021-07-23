@@ -1,0 +1,4 @@
+ float A1=A,B1=B;
+        float x=(B1/A1);
+        float y=pow(x,(N-1));
+        return (A*y);
