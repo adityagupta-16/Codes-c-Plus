@@ -1,0 +1,12 @@
+long long c=n,x=0;
+	while(n>0)
+	{ if(n%2==0)
+	 x++;
+	 n/=2;
+	 }
+	if(pow(2,x)==c)
+	{
+		return true;
+	}
+	else
+	return false;
