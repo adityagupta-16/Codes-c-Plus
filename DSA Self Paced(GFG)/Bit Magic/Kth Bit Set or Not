@@ -1,0 +1,4 @@
+ if(((n>>(k))&1)!=0)
+        return true;
+        else 
+        return false;
