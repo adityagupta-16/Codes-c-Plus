@@ -1,4 +1,9 @@
- float A1=A,B1=B;
-        float x=(B1/A1);
-        float y=pow(x,(N-1));
-        return (A*y);
+ if(N<=1)
+        return false;
+        //Your code here
+        for(int i=2;i<N;i++)
+        {
+            if(N%i==0)
+            return false;
+        }
+        return true;
