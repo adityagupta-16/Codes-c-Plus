@@ -1,0 +1,9 @@
+ if(N<=1)
+        return 1;
+        
+        double x=0;
+        for(int i=1;i<=N;i++)
+        {
+            x+=log10(i);
+        }
+        return floor(x)+1;
