@@ -1,0 +1,19 @@
+int chkprime(int N)
+        {
+            for(int i=2;i<=(int)sqrt(N);i++)
+            {
+                if(N%i==0)
+                return 0;
+            }
+            return 1;
+        }
+    int exactly3Divisors(int N)
+    {
+        //Your code here
+        int c=0;
+        for(int i=2;i*i<=N;i++)
+        {
+            if(chkprime(i))
+            c+=1;
+        }
+        return c;
