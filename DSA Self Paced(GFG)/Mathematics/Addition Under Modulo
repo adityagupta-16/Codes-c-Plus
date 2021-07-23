@@ -1,0 +1,4 @@
+ unsigned long long sum=0,c=0;
+        sum=a+b;
+        c=pow(10,9)+7;
+        return (sum%c);
