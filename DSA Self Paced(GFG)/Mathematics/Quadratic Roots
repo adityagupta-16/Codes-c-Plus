@@ -1,0 +1,23 @@
+        int d=b*b-4*a*c;
+        double x=sqrt(d);
+        vector<int>ans;
+        if(d<0)
+        {
+           ans.push_back(-1);
+           return ans;
+        }
+        double r1=(-b-x)/(2*a);
+        double r2=(-b+x)/(2*a);
+        int ra1= floor(r1);
+        int rb2= floor(r2);
+        
+        if(ra1<=rb2)
+        {
+            ans.push_back(rb2);
+            ans.push_back(ra1);
+        }
+        else{
+            ans.push_back(ra1);
+            ans.push_back(rb2);
+        }
+        return ans;
