@@ -1,0 +1,5 @@
+	unsigned int odd=(n&1431655765);
+    	unsigned int even=(n&2863311530);
+    	    even>>=1;
+    	    odd<<=1;
+    	    return(odd|even);
