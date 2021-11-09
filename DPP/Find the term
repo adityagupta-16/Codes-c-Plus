@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+
+													/*
+                          find the value in the given term as 1st is equal to 1 2nd is equal to 16 and so on. return 0 if input is negative or Zero or Greater tha 12 .
+													Test Case:
+													->1
+													o/p->1
+													->5
+													o/p->255*/
+
+
+int main()
+{	
+	int n;
+	cin>>n;
+	int val=0;					
+	if(n<1 || n>12)
+		cout<<0<<endl;
+	else
+	{
+		for(int i=1;i<=n;i++)
+			val+=i*i*i;
+	}
+	cout<<val<<endl;
+}
