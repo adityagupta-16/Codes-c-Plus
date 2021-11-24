@@ -3,7 +3,7 @@ using namespace std;
 
 
 															/* find the minimum connection of wire to turn all the bulb onn(ateast one bulb will be onn) n=no. of switches, m=no. of bulb;
-                              test case:1
+                        											        test case:1
 															n=8: 0 1  0  0  1  1  0  0
 															m=8:  3 5  10 12 13 23 30 38
 															O/p-> 20
