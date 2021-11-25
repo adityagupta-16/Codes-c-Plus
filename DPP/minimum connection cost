@@ -10,7 +10,8 @@ using namespace std;
 															test case :2
 															n=7: 1 0 1 1 0 1 1
 															m=7: 1 2 3 5 8 9 11
-															o/p->2*/
+															o/p->2 
+															*/
 int main()
 {
 	int n,m,count=0;
