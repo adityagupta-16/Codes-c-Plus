@@ -12,6 +12,7 @@ using namespace std;
 															m=7: 1 2 3 5 8 9 11
 															o/p->2 
 															*/
+
 int main()
 {
 	int n,m,count=0;
