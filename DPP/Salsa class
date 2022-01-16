@@ -1,0 +1,45 @@
+/*
+Q. A combined Salsa Lesson is to be conducted for two different classes having 8 students each, in a school There are two queues of students, queue A and quete B. You are given a string imput A denoting the queur sequence of students in queue A and string input B denoting the queue sequence of students in queue B
+A good pair is a pair containing one bay and one girl. Paining the students at Nth position of queue A with the students at Nth position of queue B is the only possible method of pairing Write a program to help the organiser count the total number of good pairs that will be formed, when the students are paired according to the method given above Your task is to return the percentage of good pairs among the total number of pairs that will be formed.
+
+NOTE:-
+A boy is denoted by number 0 and a girl is denoted by number 1 in the string sequences. 2. If the answer is in float data type, is should be converted to int data type before returning Example-If the answer is 8.66, 8 should be returned.
+
+(Testcase 1)
+I/O:
+00111101
+10000001
+O/P:62
+(Testcase 2)
+I/O:
+00110100
+00000111
+O/P:50
+(Testcase 3)
+I/O:
+10000011
+11011111
+O/P:50
+*/
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()	
+{
+	string a;
+	cin>>a;
+	string b;
+	cin>>b;
+	int count=0;
+	for(int i=0;i<8;i++)
+	{
+		if(a[i]!=b[i])
+			count+=1;
+	}
+	count=(count*100)/8;
+	cout<<count;
+	
+	
+}
