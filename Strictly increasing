@@ -1,0 +1,56 @@
+//Extract numbers from string and check its strict increasing order or not
+/*(test case-1)
+I/o-> Ram makes 5 coffee at 6 PM but kunal came  at 7 pm  9 with his friends
+O/P-> True
+explanation:
+5<6<7<9 this is strictly increasing order so true;
+(test case-2)
+I-O-> Kunal has 5 brother and raja has 5 sister.
+O/P-> False
+explanation:
+the int is 5 and 5 since it is not in incresing order .
+*/
+
+
+
+
+
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    string s;
+    getline(cin,s);
+    stringstream st;
+    st<<s;
+    string val;
+    int flag=1,num=0;
+    int min=-999;
+    while(!st.eof())
+    {
+        st>>val;
+        if(stringstream(val)>>num)
+        {
+            if(num>min)
+            {
+                min=num;
+            }
+            else
+            {
+                flag=-1;
+                break;
+            }
+        }
+    }
+    if(flag==1)
+    {
+        cout<<"True";
+    }
+    else
+    {
+        cout<<"False";
+    }
+}
