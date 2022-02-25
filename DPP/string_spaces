@@ -1,0 +1,43 @@
+/*
+Give spaces at every n interval
+input format:
+first line take a string s
+second take int n as interval
+
+
+Test case: abcdefg 2
+O/p: ab cd ef g
+/*
+
+
+#include<bits/stdc++.h>
+using namespace std;
+#define rep(i,k) for(int i=0;i<k;i++)
+#define pb push_back
+
+
+int main()
+{
+	string s;
+	cin>>s;
+	int n,count=0;
+	cin>>n;
+	vector<char>t;
+	rep(i,s.length())
+	{
+	
+		if(count==n)
+		{
+			t.pb(' ');
+			t.pb(s[i]);
+			count=0;
+		}
+		else
+			{
+				t.pb(s[i]);
+			}
+				count+=1;
+	}
+	rep(i,t.size())
+        	cout<<t[i];
+}
