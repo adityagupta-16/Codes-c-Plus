@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+#define loop(i,n) 	for(int i=0;i<n;i++)
+int main()
+{
+	int t;
+	cin>>t;
+	while(t--)
+	{
+		int x,y,k,n;
+		bool flag=true;
+		cin>>x>>y>>k>>n;
+		int a[n],b[n];
+		
+		loop(i,n)
+			cin>>a[i]>>b[i];
+		loop(i,n)
+		
+		{
+			if(b[i]<=k)
+			{
+				if(y+a[i]>=x)
+				{
+					cout<<"LuckyChef"<<endl;
+					flag=false;
+					break;
+				}
+			}
+			
+		}
+		if(flag)
+			cout<<"UnluckyChef"<<endl;
+	}
+}
