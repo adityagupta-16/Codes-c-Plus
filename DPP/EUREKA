@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	int t;
+	cin>>t;
+	while(t--)
+	{
+		int n;float pro=0;
+		cin>>n;
+		float val=0.143;
+		pro=val*n;
+		if((pow(pro,n))-floor(pow(pro,n))<0.5)
+			cout<<floor(pow(pro,n))<<endl;
+		else cout<<floor(pow(pro,n))+1<<endl;
+		
+		
+	}
+}
