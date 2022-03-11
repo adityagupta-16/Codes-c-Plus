@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+#define ll long long int
+
+int main() {
+	// your code goes here
+	ll t;
+	cin>>t;
+	while(t--)
+	{
+	    ll x,k;
+	    cin>>x>>k;
+	    k=(x*k*(x*k-1));
+	    cout<<x*2<<" "<<k<<endl;
+	}
+	
+	return 0;
+}
+  
