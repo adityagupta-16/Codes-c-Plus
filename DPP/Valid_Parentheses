@@ -1,0 +1,27 @@
+class Solution {
+public:
+    char hey(char bracket) {
+        switch (bracket) {
+            case ')':
+                return '(';
+            case '}':
+                return '{';
+            case ']':
+                return '[';
+            default:
+                return -1;
+        }
+    }
+
+    bool isValid(string s) {
+        stack<char> x;
+        for (char ch : s)  
+            if (char i = hey(ch); i == -1)
+                x.push(ch);
+            else if (!x.empty() && i == x.top())
+                x.pop();
+            else
+                return false;
+        return x.empty();
+    }
+};
