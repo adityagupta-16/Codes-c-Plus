@@ -1,0 +1,31 @@
+    #include<bits/stdc++.h>
+    using namespace std;
+
+    int main()
+    {
+        int T;
+        cin>>T;
+    for(int t=1;t<=T;t++)
+        {
+            string a,b;
+            cin>>a;
+            int m=a.size();
+            cin>>b;int n=b.size();
+            int x=0,y=0,count=0;
+            while(x<m && y<n)
+            {
+                if(a[x]==b[y])
+                {
+                    x++;
+                    y++;
+                }
+                else
+                    y++;
+            }
+            count=abs(m-n);
+            if(x<a.size())
+                cout<<"Case #"<<t <<": "<<"IMPOSSIBLE"<<endl;
+            else
+                cout<<"Case #"<<t <<": "<<count<<endl;
+        }
+    }
