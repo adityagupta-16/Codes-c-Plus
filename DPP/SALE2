@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int n,x;
+	    int val=0;
+	    cin>>n>>x;
+	    for(int i=1;i<=n;i++)
+	    {
+	        if(i%3!=0)
+	            val++;
+	    }
+	    cout<<val*x<<endl;
+	}
+	return 0;
+}
