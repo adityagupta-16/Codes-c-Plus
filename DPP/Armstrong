@@ -1,0 +1,40 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+
+ll lengthcheck(ll n)
+{
+    ll count = 0;
+    while (n)
+    {
+        n /= 10;
+        count++;
+    }
+    return count;
+}
+ll checksum(ll num,ll len)
+{
+    ll sum = 0;
+    while (num>0)
+    {
+        int temp = num % 10;
+        sum += ceil(pow(temp, len));
+       
+        num /= 10;
+    }
+    return sum;
+}
+
+int main()
+{
+    ll n;
+    cin >> n;
+    ll len = lengthcheck(n);
+    ll sum = checksum(n, len);
+    
+    if (n == sum)
+        cout << "YES" << endl;
+    else
+        cout << "NO" << endl;
+
+}
