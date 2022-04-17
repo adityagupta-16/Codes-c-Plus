@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+class area
+{
+public:
+    int base;
+    int height;
+    void input()
+    {
+        cin >> base >> height;
+    }
+        void display()
+    {
+        cout <<"base : "<< base<<endl<<"height : "<< height<<endl;
+    }
+};
+int main()
+{
+    area a;
+    a.input();
+   
+    a.display();
+    cout << (a.base*a.height)/2;
+}
