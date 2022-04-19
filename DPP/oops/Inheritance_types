@@ -22,3 +22,4 @@ class Parent{};
 class Child1: public Parent{};
 class Child2: public Parent{};
 class GrandChild: public Child1, public Child2{};
+
